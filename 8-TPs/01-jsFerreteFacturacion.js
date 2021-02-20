@@ -13,7 +13,7 @@ function Sumar ()
 	preciodos=parseFloat(document.getElementById("txtIdPrecioDos").value);
     preciotres=parseFloat(document.getElementById("txtIdPrecioTres").value);
     resultado=preciouno+preciodos+preciotres;
-    alert(resultado);
+    alert("La suma es $ " + resultado);
 }
 function Promedio () 
 {
@@ -25,7 +25,7 @@ function Promedio ()
 	preciodos=parseFloat(document.getElementById("txtIdPrecioDos").value);
     preciotres=parseFloat(document.getElementById("txtIdPrecioTres").value);
     resultado=(preciouno+preciodos+preciotres)/3;
-    alert(resultado);
+    alert(" EL promedio es $ " + resultado);
 }
 function PrecioFinal () 
 {
@@ -33,11 +33,13 @@ function PrecioFinal ()
     let preciodos;
     let preciotres;
     let sumadeprecios;
+    let iva;
     let resultado;
     preciouno=parseFloat(document.getElementById("txtIdPrecioUno").value);
 	preciodos=parseFloat(document.getElementById("txtIdPrecioDos").value);
     preciotres=parseFloat(document.getElementById("txtIdPrecioTres").value);
     sumadeprecios=preciouno+preciodos+preciotres;
-    resultado=sumadeprecios*.21+sumadeprecios;
-    alert(resultado);
+    iva=sumadeprecios*.21;
+    resultado=sumadeprecios+iva;
+    alert(" La suma mas el IVA del 21% es $ " + resultado);
 }
