@@ -4,16 +4,12 @@ function mostrar()
 
 	edad=parseFloat(document.getElementById("txtIdEdad").value);
 
-	//dentro de un if puedo agregar un segundo if para tomar un intervalo.
-	if(edad<=12){
-		
-		if(edad>=18){
+	//La edad debe estar fuera del rango de 13 a 17 años, es decir menor a 13 o mayor a 17.
+	if(edad < 13 || edad > 17) {
 
-			alert("No es adolescente");
-		}
 
+		alert("No es adolescente");
 	}
-	//else{alert("Menor de edad");}
 
 	document.getElementById("txtIdEdad").value = "";	
 

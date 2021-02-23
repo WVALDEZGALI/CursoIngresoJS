@@ -4,16 +4,22 @@ function mostrar()
 
 	edad=parseFloat(document.getElementById("txtIdEdad").value);
 
-	//dentro de un if puedo agregar un segundo if para tomar un intervalo.
-	if(edad>=13){
-		
-		if(edad<=17){
+	/*operadores logicos or "o" en español y se simboliza con el doble pipe "││" 
+	and "y" en español y se simboliza con el doble ampersand "&&" y el not "no" en 
+	español y se simboliza con el signo de admiracion "!"*/
+	if(edad>=13 && edad<=17){
 
-			alert("Es adolescente");
-		}
+		alert("Es adolescente");
 
 	}
-	//else{alert("Menor de edad");}
+	
+	// si no estoy afuera del rango haciendo el ejercicio de manera contraria
+
+	/*if( !(edad < 13 || edad>17)  ){
+
+
+		alert("Es adolescente");
+	}*/
 
 	document.getElementById("txtIdEdad").value = "";
 }
